@@ -33,26 +33,24 @@
   </header>
   <main>
     <div>
-      <form action="information gathered" method="post" id="sandwich-consumption">
-        <label class="sandwich-label" for="how many sandwiches have you eaten today?" required>how many sandwiches have you eaten today?</label>
-        <input type="number" id="how many sandwiches have you eaten today?" name="user_sandwiches">
+      <form action="information_gathered" method="post" id="sandwich-consumption">
+        <label class="sandwich-label" for="sandwich_consumption">how many sandwiches have you eaten today?</label>
+        <input type="number" id="sandwich_consumption" name="user_sandwiches" required>
         <button class="button_primary" type="submit">number of sandwiches eaten</button>
       </form>
     </div>
     <div>
-      <form action="information needed" method="post" id="sandwich-need">
-        <label class="sandwich-label" for="do you want a sandwich right now?" required>Do you want a sandwich right now?</label>
-        <input type="text" required maxlength="3" id="do you want a sandwich right now?" name="user_sandwiches">
+      <form action="information_needed" method="post" id="sandwich-need">
+        <label class="sandwich-label" for="sandwich_need">Do you want a sandwich right now?</label>
+        <input type="text" maxlength="3" id="sandwich_need" name="user_sandwiches" required>
         <button class="button_secondary" type="submit">sandwich yes or no?</button>
       </form>
     </div>
-    <p>
-      <h3>
+    <h3>
         If you like sandwiches, I would love to hear from you!
-      </h3>
-    </p>
-    <p>
-      <form action="" method="post" id="contact form">
+    </h3>
+    <div>
+      <form action="contact_info" method="post" id="contact-form">
         <label class="standard-label" for="contact-email">Email:</label>
         <input type="email" id="contact-email" required>
         <label class="standard-label" for="Telephone">Telephone:</label>
@@ -61,7 +59,7 @@
         <textarea maxlength="240" id="Message" required></textarea>
         <input type="submit" value="send message">
       </form>
-    </p>
+    </div>
     <p>
       Dale Wilson<br>
       58 Elm st<br>
