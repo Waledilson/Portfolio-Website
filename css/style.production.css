@@ -11,7 +11,7 @@ linkvisited-color: #322;
 linkhover-color: #ff0000;
 linkactive-color: #535;
 navlinkhover-color: yellow;
-gridbg-color: CF5160;
+gridbg-color: #CF5160;
 button-green: #004515;
 button-pink: #ff8899;
 */
@@ -278,7 +278,7 @@ button {
   }
 
   .grid__item {
-    background-color: yellow;
+    background-color: #cf5160;
     width: auto;
     margin: 0;
   }
