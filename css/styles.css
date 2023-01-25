@@ -4,7 +4,7 @@ linkvisited-color: #322;
 linkhover-color: #ff0000;
 linkactive-color: #535;
 navlinkhover-color: yellow;
-gridbg-color: ;
+gridbg-color: CF5160;
 button-green: #004515;
 button-pink: #ff8899;
 */
@@ -16,7 +16,7 @@ button-pink: #ff8899;
   --linkhover-color: #f00;
   --linkactive-color: #535;
   --navlinkhover-color: yellow;
-  --gridbg-color: #202050;
+  --gridbg-color: #cf5160;
   --button-green: #004515;
   --button-pink: #f89;
   --mycodelink-red: #f00;
@@ -133,14 +133,9 @@ button {
   transition: opacity 0.2s;
 }
 
-%button-shared {
+.button_primary {
   padding: 15px;
   border-radius: 30px;
-}
-
-.button_primary {
-  @extend %button-shared;
-
   font-variant: small-caps;
   background-color: var(--button-green);
   color: var(--button-pink);
@@ -151,8 +146,8 @@ button {
 }
 
 .button_secondary {
-  @extend %button-shared;
-
+  padding: 15px;
+  border-radius: 30px;
   font-variant: small-caps;
   background-color: var(--button-pink);
   color: var(--button-green);
