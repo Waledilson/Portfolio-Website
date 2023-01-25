@@ -4,7 +4,7 @@ linkvisited-color: #322;
 linkhover-color: #ff0000;
 linkactive-color: #535;
 navlinkhover-color: yellow;
-gridbg-color: yellow;
+gridbg-color: ;
 button-green: #004515;
 button-pink: #ff8899;
 */
@@ -16,7 +16,7 @@ button-pink: #ff8899;
   --linkhover-color: #f00;
   --linkactive-color: #535;
   --navlinkhover-color: yellow;
-  --gridbg-color: yellow;
+  --gridbg-color: #202050;
   --button-green: #004515;
   --button-pink: #f89;
   --mycodelink-red: #f00;
@@ -24,7 +24,7 @@ button-pink: #ff8899;
 
 body {
   background-color: var(--primary-color);
-  font-family: 'Cabin', sans-serif;
+  font-family: "Cabin", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
