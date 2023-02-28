@@ -220,7 +220,7 @@ button {
   }
 
   .grid__item {
-    background-color: var(--gridbg-color);
+    background-color: var(--primary-color);
     width: auto;
     margin: 0;
   }
@@ -238,7 +238,7 @@ button {
 }
 
 .grid__item {
-  background-color: var(--gridbg-color);
+  background-color: var(--primary-color);
   padding: 10px;
 }
 
