@@ -111,6 +111,11 @@ a:active {
   transition: 2s;
 }
 
+.contact-info,
+.contact-question {
+  justify-content: center;
+}
+
 button:hover,
 button:focus,
 .button:hover,
