@@ -225,7 +225,7 @@ button {
   }
 
   .grid__item {
-    background-color: var(--primary-color);
+    background-color: #9a90d6;
     width: auto;
     margin: 0;
   }
