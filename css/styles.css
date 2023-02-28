@@ -113,7 +113,7 @@ a:active {
 
 .contact-info,
 .contact-question {
-  justify-content: center;
+  margin-left: 40px;
 }
 
 button:hover,
