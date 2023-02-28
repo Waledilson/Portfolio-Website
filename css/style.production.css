@@ -11,14 +11,14 @@ linkvisited-color: #322;
 linkhover-color: #ff0000;
 linkactive-color: #535;
 navlinkhover-color: yellow;
-gridbg-color: yellow;
+gridbg-color: #CF5160;
 button-green: #004515;
 button-pink: #ff8899;
 */
 
 body {
   background-color: #aaafef;
-  font-family: 'Cabin', sans-serif;
+  font-family: "Cabin", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
@@ -37,7 +37,7 @@ footer {
 
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -82,15 +82,15 @@ a:active {
 
 .page-header__item {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 200px;
-          flex: 0 1 200px;
+  -ms-flex: 0 1 200px;
+  flex: 0 1 200px;
   border-radius: 30%;
 }
 
 .page-header__item:last-child {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   text-align: right;
 }
 
@@ -149,14 +149,9 @@ button {
   transition: opacity 0.2s;
 }
 
-%button-shared {
+.button_primary {
   padding: 15px;
   border-radius: 30px;
-}
-
-.button_primary {
-  @extend %button-shared;
-
   font-variant: small-caps;
   background-color: #004515;
   color: #f89;
@@ -164,12 +159,12 @@ button {
 
 .button_primary:hover {
   -webkit-animation: 1s button-spin infinite linear;
-          animation: 1s button-spin infinite linear;
+  animation: 1s button-spin infinite linear;
 }
 
 .button_secondary {
-  @extend %button-shared;
-
+  padding: 15px;
+  border-radius: 30px;
   font-variant: small-caps;
   background-color: #f89;
   color: #004515;
@@ -177,60 +172,60 @@ button {
 
 .button_secondary:hover {
   -webkit-animation: 2s button-pulse infinite linear;
-          animation: 2s button-pulse infinite linear;
+  animation: 2s button-pulse infinite linear;
 }
 
 @-webkit-keyframes button-pulse {
   0% {
     -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
+    transform: scale(1, 1);
   }
 
   25% {
     -webkit-transform: scale(2, 2);
-            transform: scale(2, 2);
+    transform: scale(2, 2);
   }
 
   50% {
     -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
+    transform: scale(1, 1);
   }
 
   75% {
     -webkit-transform: scale(0.5, 0.5);
-            transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
   }
 
   100% {
     -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
+    transform: scale(1, 1);
   }
 }
 
 @keyframes button-pulse {
   0% {
     -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
+    transform: scale(1, 1);
   }
 
   25% {
     -webkit-transform: scale(2, 2);
-            transform: scale(2, 2);
+    transform: scale(2, 2);
   }
 
   50% {
     -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
+    transform: scale(1, 1);
   }
 
   75% {
     -webkit-transform: scale(0.5, 0.5);
-            transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
   }
 
   100% {
     -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
+    transform: scale(1, 1);
   }
 }
 
@@ -261,8 +256,8 @@ button {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   text-align: center;
   border-top: 2px solid black;
 }
@@ -283,7 +278,7 @@ button {
   }
 
   .grid__item {
-    background-color: yellow;
+    background-color: #cf5160;
     width: auto;
     margin: 0;
   }
@@ -306,7 +301,7 @@ button {
 }
 
 .grid__item {
-  background-color: yellow;
+  background-color: y#CF5160;
   padding: 10px;
 }
 
@@ -346,121 +341,121 @@ button {
 @-webkit-keyframes dale-spin {
   0% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 
   100% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 @keyframes dale-spin {
   0% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 
   100% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 .profile__portrait {
   -webkit-animation: 120s dale-spin infinite linear;
-          animation: 120s dale-spin infinite linear;
+  animation: 120s dale-spin infinite linear;
 }
 
 @-webkit-keyframes button-spin {
   0% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 
   25% {
     -webkit-transform: rotate(-20deg);
-            transform: rotate(-20deg);
+    transform: rotate(-20deg);
   }
 
   50% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 
   75% {
     -webkit-transform: rotate(20deg);
-            transform: rotate(20deg);
+    transform: rotate(20deg);
   }
 
   100% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 }
 
 @keyframes button-spin {
   0% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 
   25% {
     -webkit-transform: rotate(-20deg);
-            transform: rotate(-20deg);
+    transform: rotate(-20deg);
   }
 
   50% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 
   75% {
     -webkit-transform: rotate(20deg);
-            transform: rotate(20deg);
+    transform: rotate(20deg);
   }
 
   100% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 }
 
 @-webkit-keyframes airplane-fly {
   0% {
     -webkit-transform: translate(-300, 0);
-            transform: translate(-300, 0);
+    transform: translate(-300, 0);
   }
 
   50% {
     -webkit-transform: translate(1200px, -200);
-            transform: translate(1200px, -200);
+    transform: translate(1200px, -200);
   }
 
   100% {
     -webkit-transform: translate(2500px);
-            transform: translate(2500px);
+    transform: translate(2500px);
   }
 }
 
 @keyframes airplane-fly {
   0% {
     -webkit-transform: translate(-300, 0);
-            transform: translate(-300, 0);
+    transform: translate(-300, 0);
   }
 
   50% {
     -webkit-transform: translate(1200px, -200);
-            transform: translate(1200px, -200);
+    transform: translate(1200px, -200);
   }
 
   100% {
     -webkit-transform: translate(2500px);
-            transform: translate(2500px);
+    transform: translate(2500px);
   }
 }
 
 #layer2 {
   -webkit-animation: 10s airplane-fly normal infinite linear;
-          animation: 10s airplane-fly normal infinite linear;
+  animation: 10s airplane-fly normal infinite linear;
 }
