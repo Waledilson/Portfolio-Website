@@ -17,7 +17,7 @@ button-pink: #ff8899;
 */
 
 body {
-  background-color: #808080;
+  background-color: rgb(245, 241, 142);
   font-family: "Cabin", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -25,12 +25,12 @@ body {
 }
 
 header {
-  background-color: #808080;
+  background-color: #f2f9ca;
   font-size: 20px;
 }
 
 footer {
-  background-color: #808080;
+  background-color: #ffde5a;
   font-size: 18px;
   font-style: italic;
 }
@@ -108,7 +108,7 @@ a:active {
 }
 
 .navigation-list__item:hover {
-  color: yellow;
+  color: orange;
   -webkit-transition: 2s;
   transition: 2s;
 }
@@ -125,18 +125,18 @@ button:focus,
   border: 1px solid black;
   display: inline-block;
   font-family: inherit;
-  background-color: #707070;
-  color: #f89;
+  background-color: #f2f9ca;
+  color: black;
   text-decoration: none;
   padding: 10px;
-  border-radius: 3px;
+  border-radius: 3%;
   border-bottom: 2px solid rgb(0, 0, 0, 0.3);
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
 
 .button:visited {
-  color: yellow;
+  color: #252525;
 }
 
 .button_primary {
@@ -221,7 +221,7 @@ button:focus,
 
 #mycodelink:hover {
   /* font-size: 17px; */
-  color: yellow;
+  color: orange;
   -webkit-transition: 2s;
   transition: 2s;
 }
@@ -283,7 +283,7 @@ button:focus,
   }
 
   .grid__item {
-    background-color: #707070;
+    background-color: #f2f9ca;
     border: 2px solid black;
     width: auto;
     margin: 0;
@@ -308,7 +308,7 @@ button:focus,
 
 .grid__item {
   padding-left: 10px;
-  background-color: #707070;
+  background-color: #f2f9ca;
   padding: 10px;
 }
 
@@ -468,5 +468,5 @@ button:focus,
 }
 
 .project-link:hover {
-  color: yellow;
+  color: orange;
 }
