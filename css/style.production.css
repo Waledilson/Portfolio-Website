@@ -17,7 +17,7 @@ button-pink: #ff8899;
 */
 
 body {
-  background-color: #aaafef;
+  background-color: #808080;
   font-family: "Cabin", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -25,12 +25,12 @@ body {
 }
 
 header {
-  background-color: #aaafef;
+  background-color: #808080;
   font-size: 20px;
 }
 
 footer {
-  background-color: #aaafef;
+  background-color: #808080;
   font-size: 18px;
   font-style: italic;
 }
@@ -122,10 +122,10 @@ button:focus,
 }
 
 .button {
-  border: none;
+  border: 1px solid black;
   display: inline-block;
   font-family: inherit;
-  background-color: #004515;
+  background-color: #707070;
   color: #f89;
   text-decoration: none;
   padding: 10px;
@@ -135,18 +135,8 @@ button:focus,
   transition: opacity 0.2s;
 }
 
-button {
-  border: none;
-  display: inline-block;
-  font-family: inherit;
-  background-color: #004515;
-  color: #f89;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid rgb(0, 0, 0, 0.3);
-  -webkit-transition: opacity 0.2s;
-  transition: opacity 0.2s;
+.button:visited {
+  color: yellow;
 }
 
 .button_primary {
@@ -230,10 +220,10 @@ button {
 }
 
 #mycodelink:hover {
-  font-size: 17px;
-  color: #f00;
-  -webkit-transition: 0.8s opacity;
-  transition: 0.8s opacity;
+  /* font-size: 17px; */
+  color: yellow;
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 .profile {
@@ -243,10 +233,20 @@ button {
 
 .profile__portrait {
   float: left;
-  width: 250px;
+  width: 150px;
   margin-right: 40px;
   border-radius: 50%;
-  padding: 20px;
+  padding: 5px;
+}
+
+.contact-question {
+  text-align: center;
+  margin: auto;
+}
+
+.contact-info {
+  text-align: center;
+  margin: auto;
 }
 
 .page-footer {
@@ -260,6 +260,11 @@ button {
   flex-direction: column;
   text-align: center;
   border-top: 2px solid black;
+}
+
+.about-me-paragraph {
+  text-align: center;
+  margin: 30px;
 }
 
 .grid__item {
@@ -278,7 +283,8 @@ button {
   }
 
   .grid__item {
-    background-color: #9a90d6;
+    background-color: #707070;
+    border: 2px solid black;
     width: auto;
     margin: 0;
   }
@@ -301,13 +307,14 @@ button {
 }
 
 .grid__item {
-  background-color: y#CF5160;
+  padding-left: 10px;
+  background-color: #707070;
   padding: 10px;
 }
 
-.grid__item:last-child {
+/* .grid__item:last-child {
   grid: 3 3 1 3;
-}
+} */
 
 @media all and (max-width: 500px) {
   .grid {
@@ -458,4 +465,8 @@ button {
 #layer2 {
   -webkit-animation: 10s airplane-fly normal infinite linear;
   animation: 10s airplane-fly normal infinite linear;
+}
+
+.project-link:hover {
+  color: yellow;
 }
