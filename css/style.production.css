@@ -1,23 +1,27 @@
 /*
 * Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.3.6,
-* Autoprefixer: v10.3.1
-* Browsers: last 2 version
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
 */
 
-/* purple: background #aaafef;
-link-color: #202050;
-linkvisited-color: #322;
-linkhover-color: #ff0000;
-linkactive-color: #535;
-navlinkhover-color: yellow;
-gridbg-color: #CF5160;
-button-green: #004515;
-button-pink: #ff8899;
-*/
+:root {
+  --primary-color: #f5f18e;
+  --header-color: #d6ebff;
+  --footer-color: #ffde5a;
+  --link-color: #202050;
+  --linkvisited-color: #322;
+  --linkhover-color: #f00;
+  --linkactive-color: #535;
+  --navlinkhover-color: #e47d00;
+  --gridbg-color: #9a90d6;
+  --button-green: #004515;
+  --button-pink: #f89;
+  --mycodelink-red: #f00;
+}
 
 body {
-  background-color: rgb(245, 241, 142);
+  background-color: var(--primary-color);
   font-family: "Cabin", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -25,12 +29,12 @@ body {
 }
 
 header {
-  background-color: #f2f9ca;
+  background-color: var(--header-color);
   font-size: 20px;
 }
 
 footer {
-  background-color: #ffde5a;
+  background-color: var(--footer-color);
   font-size: 18px;
   font-style: italic;
 }
@@ -48,15 +52,15 @@ h1 {
 }
 
 a {
-  color: #202050;
+  color: var(--link-color);
 }
 
 a:visited {
-  color: #322;
+  color: var(--linkvisited-color);
 }
 
 a:active {
-  color: #535;
+  color: var(--linkactive-color);
 }
 
 .about-section {
@@ -108,9 +112,21 @@ a:active {
 }
 
 .navigation-list__item:hover {
-  color: orange;
+  color: var(--navlinkhover-color);
   -webkit-transition: 2s;
+  -o-transition: 2s;
   transition: 2s;
+}
+
+.contact-question {
+  font-size: 17pt;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.contact-info {
+  text-align: center;
+  margin: auto;
 }
 
 button:hover,
@@ -121,30 +137,29 @@ button:focus,
   opacity: 0.8;
 }
 
-.button {
-  border: 1px solid black;
+.button,
+button {
   display: inline-block;
   font-family: inherit;
-  background-color: #f2f9ca;
+  background-color: var(--header-color);
   color: black;
   text-decoration: none;
   padding: 10px;
-  border-radius: 3%;
-  border-bottom: 2px solid rgb(0, 0, 0, 0.3);
+  border-radius: 50px;
+  margin-bottom: 20px;
+  border-left: 6px solid var(--footer-color);
+  border-right: 6px solid var(--footer-color);
   -webkit-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
   transition: opacity 0.2s;
-}
-
-.button:visited {
-  color: #252525;
 }
 
 .button_primary {
   padding: 15px;
   border-radius: 30px;
   font-variant: small-caps;
-  background-color: #004515;
-  color: #f89;
+  background-color: var(--button-green);
+  color: var(--button-pink);
 }
 
 .button_primary:hover {
@@ -156,8 +171,8 @@ button:focus,
   padding: 15px;
   border-radius: 30px;
   font-variant: small-caps;
-  background-color: #f89;
-  color: #004515;
+  background-color: var(--button-pink);
+  color: var(--button-green);
 }
 
 .button_secondary:hover {
@@ -220,10 +235,10 @@ button:focus,
 }
 
 #mycodelink:hover {
-  /* font-size: 17px; */
   color: orange;
-  -webkit-transition: 2s;
-  transition: 2s;
+  -webkit-transition: 0.8s opacity;
+  -o-transition: 0.8s opacity;
+  transition: 0.8s opacity;
 }
 
 .profile {
@@ -236,17 +251,7 @@ button:focus,
   width: 150px;
   margin-right: 40px;
   border-radius: 50%;
-  padding: 5px;
-}
-
-.contact-question {
-  text-align: center;
-  margin: auto;
-}
-
-.contact-info {
-  text-align: center;
-  margin: auto;
+  padding: 20px;
 }
 
 .page-footer {
@@ -262,14 +267,13 @@ button:focus,
   border-top: 2px solid black;
 }
 
-.about-me-paragraph {
-  text-align: center;
-  margin: 30px;
-}
-
 .grid__item {
   display: inline-block;
   width: 33%;
+}
+
+.project-link:hover {
+  color: var(--navlinkhover-color);
 }
 
 @supports (display: grid) {
@@ -283,7 +287,7 @@ button:focus,
   }
 
   .grid__item {
-    background-color: #f2f9ca;
+    background-color: var(--header-color);
     border: 2px solid black;
     width: auto;
     margin: 0;
@@ -307,14 +311,14 @@ button:focus,
 }
 
 .grid__item {
-  padding-left: 10px;
-  background-color: #f2f9ca;
+  background-color: var(--header-color);
+  border: 2px solid black;
   padding: 10px;
 }
 
-/* .grid__item:last-child {
+.grid__item:last-child {
   grid: 3 3 1 3;
-} */
+}
 
 @media all and (max-width: 500px) {
   .grid {
@@ -465,8 +469,4 @@ button:focus,
 #layer2 {
   -webkit-animation: 10s airplane-fly normal infinite linear;
   animation: 10s airplane-fly normal infinite linear;
-}
-
-.project-link:hover {
-  color: orange;
 }
