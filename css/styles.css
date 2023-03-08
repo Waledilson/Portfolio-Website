@@ -1,7 +1,7 @@
 :root {
-  --primary-color: #f5f18e;
-  --header-color: #d6ebff;
-  --footer-color: #ffde5a;
+  --primary-color: #63c7c0;
+  --header-color: #b3f3f5;
+  --footer-color: #ff9742;
   --link-color: #202050;
   --linkvisited-color: #322;
   --linkhover-color: #f00;
@@ -193,11 +193,12 @@ button {
 }
 
 .profile__portrait {
+  border: 1px solid black;
   float: left;
   width: 150px;
   margin-right: 40px;
   border-radius: 50%;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .page-footer {
