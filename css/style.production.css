@@ -247,11 +247,12 @@ button {
 }
 
 .profile__portrait {
+  border: 1px solid black;
   float: left;
   width: 150px;
   margin-right: 40px;
   border-radius: 50%;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .page-footer {
